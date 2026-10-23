@@ -1,0 +1,8 @@
+{
+  "min_length": 12,
+  "require_upper": true,
+  "require_lower": true,
+  "require_digit": true,
+  "require_symbol": true,
+  "min_char_classes": 0
+}

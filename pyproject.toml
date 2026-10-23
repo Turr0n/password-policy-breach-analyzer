@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "password-policy-breach-analyzer"
+version = "0.1.0"
+description = "Measure a password policy against a real breach corpus and estimate brute-force resistance."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Turr0n" }]
+keywords = ["security", "passwords", "policy", "breach", "hashcat", "infosec"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+ppa = "ppa.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Turr0n/password-policy-breach-analyzer"
+Issues = "https://github.com/Turr0n/password-policy-breach-analyzer/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Breach corpora / wordlists — do NOT commit these (large + sensitive)
+*.txt.gz
+rockyou.txt
+wordlists/
+!data/sample_passwords.txt
+
+# Generated reports
+*.report.html
+report.html
+report.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
